@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(235, 230, 224);
+    text-align: center;
+}
+h1{
+    padding-top: 5rem;
+    color: rgb(104, 169, 245);
+}
+.options{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    /* justify-content: space-evenly; */
+    /* padding-top: 2rem; */
+}
+.options label{
+    padding-right: 1rem;
+}
+div{
+    padding-top: 2rem;
+}
+.play{
+    padding: 5px;
+    width: 20rem;
+    font-size: 1.2rem;
+}

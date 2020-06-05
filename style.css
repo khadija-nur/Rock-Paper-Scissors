@@ -89,3 +89,23 @@ div{
     width: 20rem;
     font-size: 1.2rem;
 }
+.rules button{
+    float: right;
+    border-radius: 10%;
+    border: 2px solid rgb(180, 175, 175);
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+
+}
+/* .hidden{
+    displa none;
+} */
+.modal{
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    
+
+}

@@ -7,10 +7,40 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: rgb(235, 230, 224);
     text-align: center;
+.banner{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10rem;
+    /* margin: 80px 250px 40px; */
+    border: 5px solid grey;
+    border-radius: 6px;
+    justify-content: space-between;    /* position: relative; */
 }
+.score{
+    /* position: absolute; */
+    align-content: flex-end;
+    background-color: honeydew;
+    color: black;
+    border-radius: 10%;
+    padding: 0 1rem;
+
+    /* font-size: 1.3rem; */
+    /* font-weight: 600; */
+}
+.scoreCount{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+
 h1{
-    padding-top: 5rem;
+    padding-left: 1rem;
+    width: 20vh;
+    text-align: start;
+    line-height: 2rem;
     color: rgb(104, 169, 245);
+}
 }
 .options{
     display: flex;

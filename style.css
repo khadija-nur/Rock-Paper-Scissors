@@ -106,9 +106,9 @@ div{
     padding: 1rem;
 
 }
-/* .hidden{
-    displa none;
-} */
+.hidden{
+    display: none;
+}
 .modal {
     /* display: none; */
      /* Hidden by default */
@@ -129,13 +129,13 @@ div{
   
   /* Modal Content */
 .modal-content {
-    height: 400px;
+    height: auto;
     position: relative;
     background-color: #fefefe;
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 70%;
+    width: 40vw;
     border-radius: 7px;
     /* box-shadow: 0 4px/ 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); */
     /* -webkit-animation-name: animatetop; */
@@ -172,11 +172,17 @@ div{
   
 .modal-header {
     padding: 2px 16px;
-    background: linear-gradient(90deg ,#937af0, #e47483, #f3ea6cd3) ;
-    color: white;
+    /* background: linear-gradient(90deg ,#937af0, #e47483, #f3ea6cd3) ; */
+    background: transparent;
+    color: rgb(0, 0, 0);
 }
   
-/* .modal-body {
-    padding: 2px 16px;
-} */
-  
+.modal-body {
+    padding: 60px 16px;
+}
+
+.title{
+    padding-top: .9rem;
+    float: left;
+    font-size: 1rem;
+}

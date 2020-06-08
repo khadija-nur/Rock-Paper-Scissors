@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 body{
     font-family: 'Poppins', sans-serif;
@@ -9,84 +10,83 @@ body{
     width: 100vw;
     width: 70vw;
     margin: 0 auto;
-    /* background-color: rgb(0, 0, 0); */
     text-align: center;
     color: rgb(255, 255, 255);
     background:radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+main{
+    width: 50vh;
+    margin: auto;
 }
 .banner{
     padding: 1rem;
     display: flex;
     flex-direction: row;
     margin-top: 2rem;
-    /* margin: 80px 250px 40px; */
     border: 2px solid hsl(217, 16%, 45%);
     border-radius: 10px;
-    justify-content: space-between;    /* position: relative; */
+    justify-content: space-between;
 }
 .score{
-    /* position: absolute; */
     align-content: flex-end;
     background-color: #fff;
     color: hsl(229, 64%, 46%);
     border-radius: 10%;
     padding: 0 1rem;
-
-    /* font-size: 1.3rem; */
-    /* font-weight: 600; */
 }
+
 .scoreCount{
     font-size: 3rem;
     font-weight: 700;
     color: black;
 }
 
-
-
+.triangle{
+    transform: translateY(-350px);
+    animation-name: animatetop;
+    animation-duration: 3s
 }
+
 .icons{
+    z-index: 1;
     display: grid;
     grid-template-areas: 
-    "r p"
-    "s s";
+    "p s"
+    "r r";
 }
+
 .rock, .paper, .scissors {
     background-color: white;
     border-radius: 50%;
     padding: 2rem;
-    /* box-shadow: 1px 1px 4px 3px rgb(65, 56, 56);  */
-     /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
     background: radial-gradient(#f7f7f7, #f4f4f7, #5c5b5b );
     margin: auto;
+    z-index: 1;
   }
+
 .rock{
+    margin-top:7rem;
     grid-area:r ;
-    border: 1rem solid rgb(108, 142, 236);
+    border: 0.8rem solid  hsl(349, 71%, 52%);
 
 }
+
 .paper{
     grid-area: p;
-    border: 1rem solid rgb(236, 206, 108);
+    border: 0.8rem solid hsl(230, 89%, 62%) ;
 
 }
+
 .scissors{
     grid-area: s;
-    border: 1rem solid rgb(236, 108, 108);
+    border: 0.8rem solid  hsl(40, 84%, 53%);
 
 }
-.options{
-    display: flex;
-    justify-content: center;
-    /* flex-direction: column; */
-    /* justify-content: space-evenly; */
-    /* padding-top: 2rem; */
-}
-.options label{
-    padding-right: 1rem;
-}
+
 div{
     padding-top: 2rem;
 }
+
 .play{
     padding: 5px;
     width: 20rem;
@@ -100,27 +100,21 @@ div{
     color: white;
     text-decoration: none;
     padding: 1rem;
-
 }
+
 .hidden{
     display: none;
 }
-.modal {
-    /* display: none; */
-     /* Hidden by default */
-    
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+.modal {    
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    /* background-color: rgb(223, 26, 26);  */
-    /* Fallback color */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
     background-color: rgba(0,0,0,0.7);
-     /* Black w/ opacity */
 }
   
   /* Modal Content */
@@ -133,19 +127,11 @@ div{
     border: 1px solid #888;
     width: 40vw;
     border-radius: 7px;
-    /* box-shadow: 0 4px/ 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); */
-    /* -webkit-animation-name: animatetop; */
-    /* -webkit-animation-duration: 0.4s; */
     animation-name: animatetop;
     animation-duration: 0.4s
 }
   
-  /* Add Animation */
-  /* @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0} 
-    to {top:0; opacity:1}
-  } */
-  
+
 @keyframes animatetop {
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}

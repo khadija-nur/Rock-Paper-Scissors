@@ -62,7 +62,9 @@ main{
     background: radial-gradient(#f7f7f7, #f4f4f7, #5c5b5b );
     margin: auto;
     z-index: 1;
-  }
+    animation-name: animatetop;
+    animation-duration: 5s
+}
 
 .rock{
     margin-top:7rem;

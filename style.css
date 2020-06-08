@@ -41,6 +41,7 @@ main{
     color: black;
 }
 
+
 .triangle{
     transform: translateY(-350px);
     animation-name: animatetop;
@@ -93,6 +94,10 @@ div{
     padding: 5px;
     width: 20rem;
     font-size: 1.2rem;
+}
+aside {
+    position: relative;
+    bottom: 1rem;
 }
 .rules button{
     float: right;

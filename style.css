@@ -88,6 +88,15 @@ main, header{
 
 }
 
+.results{
+    margin: auto;
+
+    width: 80vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: ;
+}
+
 div{
     padding-top: 2rem;
 }

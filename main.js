@@ -7,6 +7,9 @@ const rules = document.querySelector(".rulesBtn");
 const rulesModal = document.querySelector(".modal")
 const closeBtn = document.querySelector(".close");
 
+const mainBody = document.querySelector("main");
+const results = document.querySelector(".results");
+const resultscomment = document.querySelector(".resultP");
 
    if (pickedOption == null){
       humanResults.innerText = "you lose"

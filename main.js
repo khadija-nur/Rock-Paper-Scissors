@@ -18,6 +18,8 @@ const houseResults = document.querySelector(".house");
 const userResults = document.querySelector(".user");
 optionsContainer.addEventListener("click", e =>{
    const userAnswerValue = e.target.classList.value;
+   mainBody.style.display = "none";
+
    }
 })
 

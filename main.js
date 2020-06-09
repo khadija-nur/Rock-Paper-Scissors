@@ -1,20 +1,21 @@
 // Define variables
-const machinesOptions = [".rock", ".paper", ".scissors"];
-const userOptions =document.getElementsByClassName("choice") ;
+const optionsContainer =document.querySelector(".icons");
+const options = Array.from(optionsContainer.children);
+const machineAnswer = options[Math.floor(Math.random() * 3)];
 const userScore = document.querySelector(".scoreCount");
 
 const rules = document.querySelector(".rulesBtn");
 const rulesModal = document.querySelector(".modal")
 const closeBtn = document.querySelector(".close");
 
+const playBtn = document.querySelector(".play");
+
 const mainBody = document.querySelector("main");
 const results = document.querySelector(".results");
 const resultscomment = document.querySelector(".resultP");
 
-   if (pickedOption == null){
-      humanResults.innerText = "you lose"
-   }
-   else{
+const houseResults = document.querySelector(".house");
+const userResults = document.querySelector(".user");
       let machinesPick = machinesOptions[Math.floor(Math.random()*3)];
       machineResults.innerText = `The house picked ${machinesPick}`;
       humanResults.innerText = `You picked ${pickedOption.value}`;

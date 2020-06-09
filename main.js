@@ -68,6 +68,9 @@ optionsContainer.addEventListener("click", e =>{
    }
 })
 
+playBtn.addEventListener("click", e =>{
+   mainBody.style.display = "block"
+})
 
 
 

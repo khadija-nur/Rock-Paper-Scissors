@@ -1,18 +1,12 @@
 // Define variables
-// document.querySelector('input[name="genderS"]:checked').value;
-// const playbutton = document.getElementsByClassName("play");
-const machinesOptions = ["Rock", "Paper", "Scissors"];
-const playbutton = document.querySelector("button");
+const machinesOptions = [".rock", ".paper", ".scissors"];
+const userOptions =document.getElementsByClassName("choice") ;
+const userScore = document.querySelector(".scoreCount");
 
-const humanResults = document.querySelector(".humanResults");
-const machineResults = document.querySelector(".machineResults");
+const rules = document.querySelector(".rulesBtn");
+const rulesModal = document.querySelector(".modal")
+const closeBtn = document.querySelector(".close");
 
-// Define functions
-// console.log(generateBtn);
-// When the play button is clicked results should be displayed
-// generateBtn.addEventListener ('click', result = () => {})
-playbutton.addEventListener('click', resultsDisplay = () =>{
-   let pickedOption = document.querySelector('input[name="choices"]:checked');
 
    if (pickedOption == null){
       humanResults.innerText = "you lose"
@@ -24,5 +18,10 @@ playbutton.addEventListener('click', resultsDisplay = () =>{
    }
 
 
-   
+
+rules.addEventListener("click", openModal = () =>{
+      rulesModal.classList.remove("hidden");
+});
+closeBtn.addEventListener("click", closeModal =() => {
+   rulesModal.classList.add("hidden");
 });

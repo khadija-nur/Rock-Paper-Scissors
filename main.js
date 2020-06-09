@@ -16,10 +16,11 @@ const resultscomment = document.querySelector(".resultP");
 
 const houseResults = document.querySelector(".house");
 const userResults = document.querySelector(".user");
-      let machinesPick = machinesOptions[Math.floor(Math.random()*3)];
-      machineResults.innerText = `The house picked ${machinesPick}`;
-      humanResults.innerText = `You picked ${pickedOption.value}`;
+optionsContainer.addEventListener("click", e =>{
+   const userAnswerValue = e.target.classList.value;
    }
+})
+
 
 
 

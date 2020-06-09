@@ -4,7 +4,8 @@
     box-sizing: border-box;
     overflow: hidden;
 }
-body{
+
+body {
     font-family: 'Barlow Semi Condensed', sans-serif;
     height: 100vh;
     width: 100vw;
@@ -13,11 +14,13 @@ body{
     color: rgb(255, 255, 255);
     background:radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
 }
-main, header{
+
+header {
     width: 70vh;
     margin: auto;
 }
-.banner{
+
+.banner {
     padding: 1rem;
     display: flex;
     flex-direction: row;
@@ -26,32 +29,34 @@ main, header{
     border-radius: 10px;
     justify-content: space-between;
 }
-.score{
+
+.score {
     align-content: flex-end;
     background-color: #fff;
     color: hsl(229, 64%, 46%);
     border-radius: 10%;
     padding: 0 1rem;
 }
-.score p{
+
+.score p {
     padding-top: .5rem;
     font-weight: 700;
 }
-.scoreCount{
+
+.scoreCount {
     font-size: 3rem;
     font-weight: 700;
     color: black;
 }
 
-
-.triangle{
+.triangle {
     transform: translateY(-390px);
     animation-name: animatetop;
     animation-duration: 3s
 }
 
-.icons{
-    width: 60vh;
+.icons {
+    /* width: 60vh; */
     margin: auto;
     z-index: 1;
     display: grid;
@@ -61,8 +66,8 @@ main, header{
 }
 
 .rock, .paper, .scissors {
-    background-color: white;
-    border-radius: 50%;
+    /* background-color: white; */
+    border-radius: 90px;
     padding: 2.5rem;
     background: radial-gradient(#f7f7f7, #f4f4f7, #5c5b5b );
     margin: auto;
@@ -71,14 +76,14 @@ main, header{
     animation-duration: 5s
 }
 
-.rock{
+.rock {
     margin-top:7rem;
     grid-area:r ;
     border: 0.9rem solid  hsl(349, 71%, 52%);
 
 }
 
-.paper{
+.paper {
     grid-area: p;
     border: 0.8rem solid hsl(230, 89%, 62%) ;
 
@@ -91,31 +96,59 @@ main, header{
 }
 
 .results{
+    padding-top: 2rem;
     margin: auto;
-
-    width: 80vh;
+    /* justify-content: space-evenly; */
+    justify-content: center;
+    /* width: 80vh; */
     display: flex;
-    justify-content: space-around;
-    flex-direction: ;
+    /* flex-direction: row ; */
+}
+
+.results .picked{
+    display: flex;
+    /* flex-direction: ; */
+        justify-content: space-between;
+
+}
+.results span{
+    display: flex;
+    flex-direction: column;
+    
+}
+.results .scissors{
+    transform: scale(2);
+    margin: 10rem;
+
+}
+.resultP{
+    font-size: 2.3rem;
+    font-weight: 700;
+
+}
+.end{
+    margin: auto;
+}
+.play{
+   border-radius: 10px;
+   color: rgb(247, 74, 74);
+    padding: 1rem;
+    width: 12rem;
+    height: 3rem;
+    font-size: 1rem;
+    align-self: center;
 }
 
 div{
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
 }
 
-.play{
-    padding: 5px;
-    width: 20rem;
-    font-size: 1.2rem;
-}
-aside {
-    position: relative;
-    bottom: 1rem;
-    right: 10rem;
-}
 .rules button{
-    width: 10vw;
     float: right;
+    position: fixed;
+    bottom: 2rem;
+    right: 10rem;
+    width: 10vw;
     border-radius: 10px;
     border: 2px solid hsl(217, 16%, 45%);
     background-color: transparent;

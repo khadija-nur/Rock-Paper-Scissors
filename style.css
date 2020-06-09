@@ -45,12 +45,14 @@ main, header{
 
 
 .triangle{
-    transform: translateY(-350px);
+    transform: translateY(-390px);
     animation-name: animatetop;
     animation-duration: 3s
 }
 
 .icons{
+    width: 60vh;
+    margin: auto;
     z-index: 1;
     display: grid;
     grid-template-areas: 
@@ -61,7 +63,7 @@ main, header{
 .rock, .paper, .scissors {
     background-color: white;
     border-radius: 50%;
-    padding: 2rem;
+    padding: 2.5rem;
     background: radial-gradient(#f7f7f7, #f4f4f7, #5c5b5b );
     margin: auto;
     z-index: 1;
@@ -72,7 +74,7 @@ main, header{
 .rock{
     margin-top:7rem;
     grid-area:r ;
-    border: 0.8rem solid  hsl(349, 71%, 52%);
+    border: 0.9rem solid  hsl(349, 71%, 52%);
 
 }
 
@@ -127,7 +129,7 @@ aside {
 }
 .modal {    
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     padding-top: 100px;
     left: 0;
     top: 0;
@@ -149,6 +151,9 @@ aside {
     border-radius: 7px;
     animation-name: animatetop;
     animation-duration: 0.4s
+}
+.modal-body img{
+object-fit: scale-down;
 }
   
 

@@ -74,7 +74,6 @@ optionsContainer.addEventListener("click", e =>{
 
          }
       }
-   // }
       
 
 
@@ -85,51 +84,12 @@ playBtn.addEventListener("click", e =>{
    results.classList.add("hidden");
 })
 
-// function displayResults() {
-//    if (e.target = ){}
-// }
-// console.log(options[1]);
-// // console.log(machinesOptions)
-// const body = document.querySelector("body");
-// body.appendChild(options[1])
-
-
-   
-// const rockwins = rock > scissors;
-// const paperwins = paper > rock;
-// const scissorswin = scissors > paper
-
-
 rules.addEventListener("click", openModal = () =>{
       rulesModal.classList.remove("hidden");
 });
 closeBtn.addEventListener("click", closeModal =() => {
    rulesModal.classList.add("hidden");
 });
-
-
-// closeBtn.addEventListener("click", closeModal());
-// playbutton.addEventListener('click', resultsDisplay = () =>{
-//    let pickedOption = document.querySelector('input[name="choices"]:checked');
-
-//    if (pickedOption == null){
-//       humanResults.innerText = "you lose"
-//    }
-//    else{
-//       let machinesPick = machinesOptions[Math.floor(Math.random()*3)];
-//       machineResults.innerText = `The house picked ${machinesPick}`;
-//       humanResults.innerText = `You picked ${pickedOption.value}`;
-//    }
-// });
-// // } 
-// for(let i = 0; i<icons.length; i++ ){
-//    icons[i].addEventListener("click", e =() =>{
-//      displayResults();
-//    } )
-// // }
-
-
-
 
 
 // we have 3 options for each user

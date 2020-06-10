@@ -16,62 +16,88 @@ const resultscomment = document.querySelector(".resultP");
 
 const houseResults = document.querySelector(".house");
 const userResults = document.querySelector(".user");
+console.log(resultscomment.innerHTML);
+// console.log(resultscomment)
 optionsContainer.addEventListener("click", e =>{
    const userAnswerValue = e.target.classList.value;
-   mainBody.style.display = "none";
+   // mainBody.style.display = "none";
 
+   // console.log(`img.${userAnswerValue}`)
+   // console.log(options)
+   console.log(e.target)
+   console.log(machineAnswer)
+   // if (options.includes(`img.${userAnswerValue}`)){
+      mainBody.classList.add("hidden");
+      const machineAnswerValue = machineAnswer.classList.value;
       if (e.target == machineAnswer){
-         results.appendChild(e.target);
+         userResults.appendChild(e.target);
          houseResults.appendChild(machineAnswer);
          console.log((e.target).classList.value);
-         console.log("you draw")
+         resultscomment.innerHTML = "you draw";
       }
       else if(machineAnswerValue == "rock" ){
          if(userAnswerValue == "paper"){
-            results.appendChild(e.target);
-         houseResults.appendChild(machineAnswer);
-            resultscomment.innerHTML = "you win paper covers rock";
+            userResults.appendChild(e.target);
+            houseResults.appendChild(machineAnswer);
+            resultscomment.innerHTML = "you win";
 
          }
          else{
-            results.appendChild(e.target);
-            results.appendChild(machineAnswer);
-            resultscomment.innerHTML = "rock crushes scissors";
+            userResults.appendChild(e.target);
+            houseResults.appendChild(machineAnswer);
+            resultscomment.innerHTML = "you lose";
          }
       }
       else if(machineAnswerValue == "paper"){
          if(userAnswerValue == "rock"){
-            resultscomment.innerHTML = "house wins paper covers rock";
-            results.appendChild(e.target);
-            results.appendChild(machineAnswer);
+            resultscomment.innerHTML = "house wins";
+            userResults.appendChild(e.target);
+            houseResults.appendChild(machineAnswer);
          }
          else{
-            results.appendChild(e.target);
-            results.appendChild(machineAnswer);
-            resultscomment.innerHTML = "scissors cut paper";
+            userResults.appendChild(e.target);
+            houseResults.appendChild(machineAnswer);
+            resultscomment.innerHTML = "you win";
          }
       }
       else{
          if(userAnswerValue == "rock"){
-            results.appendChild(e.target);
-            results.appendChild(machineAnswer);
-            resultscomment.innerHTML = "you win rock crushes scissors";
+            userResults.appendChild(e.target);
+            houseResults.appendChild(machineAnswer);
+            resultscomment.innerHTML = "you win";
 
          }
          else{
-            results.appendChild(e.target);
-            results.appendChild(machineAnswer);
-            resultscomment.innerHTML = "you lose scissors cut paper";
+            userResults.appendChild(e.target);
+            houseResults.appendChild(machineAnswer);
+            resultscomment.innerHTML = "you lose";
 
          }
       }
-   }
+   // }
+      
+
+
 })
 
 playBtn.addEventListener("click", e =>{
-   mainBody.style.display = "block"
+   mainBody.classList.remove("hidden");
+   results.classList.add("hidden");
 })
 
+// function displayResults() {
+//    if (e.target = ){}
+// }
+// console.log(options[1]);
+// // console.log(machinesOptions)
+// const body = document.querySelector("body");
+// body.appendChild(options[1])
+
+
+   
+// const rockwins = rock > scissors;
+// const paperwins = paper > rock;
+// const scissorswin = scissors > paper
 
 
 rules.addEventListener("click", openModal = () =>{
@@ -80,3 +106,49 @@ rules.addEventListener("click", openModal = () =>{
 closeBtn.addEventListener("click", closeModal =() => {
    rulesModal.classList.add("hidden");
 });
+
+
+// closeBtn.addEventListener("click", closeModal());
+// playbutton.addEventListener('click', resultsDisplay = () =>{
+//    let pickedOption = document.querySelector('input[name="choices"]:checked');
+
+//    if (pickedOption == null){
+//       humanResults.innerText = "you lose"
+//    }
+//    else{
+//       let machinesPick = machinesOptions[Math.floor(Math.random()*3)];
+//       machineResults.innerText = `The house picked ${machinesPick}`;
+//       humanResults.innerText = `You picked ${pickedOption.value}`;
+//    }
+// });
+// // } 
+// for(let i = 0; i<icons.length; i++ ){
+//    icons[i].addEventListener("click", e =() =>{
+//      displayResults();
+//    } )
+// // }
+
+
+
+
+
+// we have 3 options for each user
+// machine answer wil be a random option form the collection
+// user answer will be e.target (event will be click)
+// we compare user answer to machine answer
+// if they are the same, they draw 
+// if not, we figure out who beats who
+// we display the options that have been picked by each user
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 

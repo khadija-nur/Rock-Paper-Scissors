@@ -106,7 +106,9 @@ main{
 } */
 
 .results{
-    padding-top: 2rem;
+   display: flex;
+   margin-top: 3rem;
+   /* align-items: flex-end; */
     /* margin: auto; */
     /* justify-content: space-around; */
     justify-content: center;
@@ -115,25 +117,16 @@ main{
     /* flex-direction:column ; */
 }
 
-/* .results .picked{
-    display: flex;
-    /* flex-direction: ; 
-    justify-content: center;
-
-/* } */
 .results .rock, .results .paper, .results .scissors{
     transform: scale(1.2);
 }
-.results span{
+.results span p{
     display: flex;
-    /* flex-direction: row; */
+    flex-direction: column;
+    margin-bottom: 30px;
     
 }
-/* .results .scissors{
-    transform: scale(2);
-    margin: 10rem;
 
-} */
 .resultP{
     font-size: 2.3rem;
     font-weight: 700;
@@ -176,6 +169,7 @@ main{
 }
 .end{
     width: auto;
+    margin: auto 60px;
 }
 .play{
    border-radius: 10px;
@@ -185,10 +179,6 @@ main{
     height: 3rem;
     font-size: 1rem;
     align-self: center;
-}
-
-div{
-    /* padding-top: 2rem; */
 }
 
 .rules button{
@@ -243,7 +233,6 @@ object-fit: scale-down;
     to {top:0; opacity:1}
 }
   
-  /* The Close Button */
 .close {
     color: rgb(0, 0, 0);
     float: right;
@@ -260,7 +249,6 @@ object-fit: scale-down;
   
 .modal-header {
     padding: 2px 16px;
-    /* background: linear-gradient(90deg ,#937af0, #e47483, #f3ea6cd3) ; */
     background: transparent;
     color: rgb(0, 0, 0);
 }

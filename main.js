@@ -17,24 +17,34 @@ const resultscomment = document.querySelector(".resultP");
 
 const houseResults = document.querySelector(".house");
 const userResults = document.querySelector(".user");
-console.log(resultscomment.innerHTML);
-// console.log(resultscomment)
-optionsContainer.addEventListener("click", e =>{
-   const userAnswerValue = e.target.classList.value;
-   // mainBody.style.display = "none";
 
-   // console.log(`img.${userAnswerValue}`)
-   // console.log(options)
-   console.log(e.target)
-   console.log(machineAnswer)
-   // if (options.includes(`img.${userAnswerValue}`)){
+
+function showResults(machineAnswervalue, userAnswervalue ){
+   document.getElementById("user-pick").src = `./instructions/images/icon-${userAnswervalue}.svg`;
+   document.getElementById("user-pick").className = `${userAnswervalue}`;
+   document.getElementById("house-pick").src = `./instructions/images/icon-${machineAnswervalue}.svg`;
+   document.getElementById("house-pick").className = `${machineAnswervalue}`; 
+}
+
+
+optionsContainer.addEventListener("click", e =>{
+
+   
+   const userAnswerValue = e.target.classList.value;
+   const machineAnswer = options[Math.floor(Math.random() * 3)];
+   const machineAnswerValue = machineAnswer.classList.value;
+
+   console.log(resultscomment.textContent);
+
+//   console.log("machine answer = " + machineAnswerValue)
       mainBody.classList.add("hidden");
-      const machineAnswerValue = machineAnswer.classList.value;
-      if (e.target == machineAnswer){
-         userResults.appendChild(e.target);
-         houseResults.appendChild(machineAnswer);
-         console.log((e.target).classList.value);
-         resultscomment.innerHTML = "you draw";
+      results.classList.remove("hidden");
+      
+      console.log('you picked '+userAnswerValue);
+      console.log('house picked '+machineAnswerValue);
+      // console.log(resultscomment.innerHTML);
+
+      if (userAnswerValue == machineAnswerValue){
       }
       else if(machineAnswerValue == "rock" ){
          if(userAnswerValue == "paper"){

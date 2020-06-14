@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* overflow: hidden; */
+    /* overflow-x: hidden; */
 }
 
 body {
+    /* position: relative; */
     font-family: 'Barlow Semi Condensed', sans-serif;
     height: 100vh;
     width: 100vw;
@@ -49,51 +50,60 @@ header {
     color: black;
 }
 
+main{
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    /* transform: translate(50%, 50%); */
+    justify-content: center;
+}
+
 .triangle {
-    transform: translateY(-390px);
+    position: relative;
+    transform: translateY(100px);
     animation-name: animatetop;
     animation-duration: 3s
 }
 
-.icons {
-    padding-top: 2rem;
-    width: 80vh;
-    margin: auto;
-    z-index: 1;
-    display: grid;
-    grid-template-areas: 
-    "p s"
-    "r r";
+.icons {   
+    position: absolute;
+    padding: 2rem;
+    /* width: 50vh; */
+    /* margin: auto; */
+    z-index: 2;
+  display: flex;
+  flex-direction: row;
 }
 
+
+
 .rock, .paper, .scissors {
-    /* background-color: white; */
-    border-radius: 90px;
+    /* width: 10vw; */
+    /* height: 100px; */
+    /* border-radius: 50%;  */
     padding: 2.5rem;
-    background: radial-gradient(#f7f7f7, #f4f4f7, #5c5b5b );
     margin: auto;
-    z-index: 1;
+    z-index: 2;
     animation-name: animatetop;
     animation-duration: 5s
 }
-
+/* 
 .rock {
-    grid-area:r ;
-    border: 0.9rem solid  hsl(349, 71%, 52%);
+    grid-area: r;
+    
 
 }
 
 .paper {
+
     grid-area: p;
-    border: 0.8rem solid hsl(230, 89%, 62%) ;
 
 }
 
 .scissors{
     grid-area: s;
-    border: 0.8rem solid  hsl(40, 84%, 53%);
 
-}
+} */
 
 .results{
     padding-top: 2rem;

@@ -23,10 +23,10 @@ function showResults(machineAnswervalue, userAnswervalue ){
    console.log(machineAnswervalue, userAnswervalue )
    document.getElementById("user-pick").src = `./instructions/images/icon-${userAnswervalue}.svg`;
    document.getElementById("user-pick").className = `${userAnswervalue}`;
+   document.getElementById("user-pick-border").className = `border border-${userAnswervalue}`
    document.getElementById("house-pick").src = `./instructions/images/icon-${machineAnswervalue}.svg`;
    document.getElementById("house-pick").className = `${machineAnswervalue}`; 
    document.getElementById("house-pick-border").className = `border border-${machineAnswervalue}`
-   document.getElementById("user-pick-border").className = `border border-${userAnswervalue}`
 }
 
 

@@ -3,6 +3,7 @@ const optionsContainer =document.querySelector(".icons");
 const options = Array.from(optionsContainer.children);
 const machineAnswer = options[Math.floor(Math.random() * 3)];
 const userScore = document.querySelector(".scoreCount");
+scoreCount = 0;
 
 const rules = document.querySelector(".rulesBtn");
 const rulesModal = document.querySelector(".modal")

@@ -112,23 +112,3 @@ closeBtn.addEventListener("click", closeModal =() => {
 });
 
 
-// we have 3 options for each user
-// machine answer wil be a random option form the collection
-// user answer will be e.target (event will be click)
-// we compare user answer to machine answer
-// if they are the same, they draw 
-// if not, we figure out who beats who
-// we display the options that have been picked by each user
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 

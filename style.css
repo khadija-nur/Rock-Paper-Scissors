@@ -152,14 +152,13 @@ main{
 .border-rock{
     /* grid-area: r; */
     /* padding: 2.6rem; */
-        margin-top: 15rem;
 
     border: .9rem solid hsl(349, 71%, 52%);
 
 }
 
 .rock-position{
-    /* transform: translate(00%); */
+    margin-top: 15rem;
 }
 
 .border-scissors{

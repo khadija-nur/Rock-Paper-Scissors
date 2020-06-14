@@ -128,6 +128,41 @@ header {
     font-size: 2.3rem;
     font-weight: 700;
 
+
+}
+.border{
+    width: 157px;
+    height: 167px;
+    background: radial-gradient(#f7f7f7, #f4f4f7, #5c5b5b );
+    border-radius: 50%;
+    z-index: 2;
+
+
+}
+
+.border-paper{
+    /* grid-area: p; */
+
+    border: 0.9rem solid hsl(230, 89%, 62%) ;
+}
+
+.border-rock{
+    /* grid-area: r; */
+    /* padding: 2.6rem; */
+        margin-top: 15rem;
+
+    border: .9rem solid hsl(349, 71%, 52%);
+
+}
+
+.rock-position{
+    /* transform: translate(00%); */
+}
+
+.border-scissors{
+    border: 0.9rem solid  hsl(40, 84%, 53%);
+    /* grid-area: s; */
+
 }
 .end{
     width: auto;
